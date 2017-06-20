@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-md-8">
           <h1>Find plants for your garden</h1>
-          <form>
+          <form id="find-plant-form">
             <div class="form-group">
               <label for="sun">How much sun will your plant get?</label>
               <select id="sun"class="form-control">
@@ -144,13 +144,28 @@
                   </label>
                 </div>
             </div>
-            <button type="submit" class="btn btn-success">Submit</button>
+            <button type="submit" id="redirectToResults" class="btn btn-success">Submit</button>
           </form>
 
         </div>
       </div> <!--/row-->
     </div> <!-- /container -->
 
+    <script>
+    document.getElementById("redirectToResults").addEventListener("click", function(event){
+      event.preventDefault()
+      console.log("click");
+      var form = document.getElementById("find-plant-form");
+      var sun = document.getElementById("sun").value;
+      var wet = document.getElementById("wet").value;
+      var effort = document.getElementById("effort").value;
+      var type = form.elements["plantTypeRadios"].value;
+      var redirectString = "?sun=" + sun + "&wet=" + wet + "&effort=" + effort + "&type=" + type;
+      console.log(redirectString);
+      window.location.replace("/example-search-results.html" + redirectString);
+    });
+
+    </script>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
