@@ -1,5 +1,6 @@
 window.onload = function() {
-  var listItems =  document.getElementsByTagName("LI");
+  ul = document.getElementById("myUL")
+  var listItems =  ul.getElementsByTagName("LI");
   var searchParams = getSearchParameters();
   filterItems(listItems, searchParams);
 };
