@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,9 +29,31 @@
 </head>
 
 <body>
+<container>
+    <div>
+<style>
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+</style>
 <input type="text" id="myInput" onkeyup="searchByName()" placeholder="Search for names.." title="Type in a name">
 
-<ul id="myUL">
+<ul id="myUL" style="list-style-type:none">
     <li><a href="#" class="header">A</a></li>
     <li><a href="#">Adele</a></li>
     <li><a href="#">Agnes</a></li>
@@ -45,5 +68,7 @@
     <li><a href="#">Cindy</a></li>
 </ul>
 <script src="searchByName.js"></script>
+        <div>
+</container>
 </body>
 </html>
