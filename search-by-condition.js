@@ -4,8 +4,9 @@ window.onload = function() {
   filterItems(listItems, searchParams);
 };
 
+
 function filterItems(items, searchParams) {
-  item.forEach(function(item, searchParams) {
+  items.forEach (item it items) {
     if (!(
       item.dataset.sun = searchParams.sun &&
       item.dataset.wet = searchParams.wet &&
@@ -14,7 +15,7 @@ function filterItems(items, searchParams) {
     )) {
       item.style.display = "none";
     }
-  )}
+  }
 }
 
 function getSearchParameters() {
