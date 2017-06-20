@@ -11,16 +11,18 @@ body {
     padding-bottom: 30px;
 }
 
-#find-me-a-plant {
+#find-me-a-plant {  
     border-color: green;
     background-color: green;
     color: white;
+    border-radius: 10px;
 }
 
 #help-me-garden {
     border-color: brown;
     background-color: brown;
     color: white;
+    border-radius: 10px;
 }
 
 .spacer-20 {
@@ -29,4 +31,11 @@ body {
 
 .spacer-40 {
 	height: 20px;
+}
+
+@media (min-width: 992px) {
+	.welcome-text .lead {
+		padding-top: 40px;
+
+	}
 }
