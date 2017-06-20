@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Change Title</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -25,6 +25,52 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+
+    .plant-condition-icons {
+
+      margin-top: 5%;
+      margin-left: 2%;
+
+
+    }
+
+    .fa-leaf{
+      color: lightgreen;
+    }
+    .fa-leaf:hover {
+      color:green;
+    }
+
+    .fa-tint{
+      color: lightblue;
+    }
+
+    .fa-tint:hover {
+      color:blue;
+    }
+
+    .fa-sun-o {
+      color: 	#FFD700;
+    }
+    .fa-sun-o:hover {
+      color:#FF8C00;
+    }
+
+    .fa-globe {
+      color: lightblue;
+    }
+
+    .fa-globe:hover{
+      color:blue;
+    }
+
+    .plant-condition-icons-span {
+    padding: 1%;
+    }
+
+    </style>
   </head>
 
   <body>
@@ -38,7 +84,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="menuLogo.png" width=100%></a>
+          <a class="navbar-brand" href="index.html"><img src="menuLogo.png" width=100%></a>
         </div>
          <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav navbar-right">
@@ -53,8 +99,7 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" da
-            ta-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Advice <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Advice <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Planting tutorials</a></li>
               <li><a href="#">What to plant</a></li>
@@ -65,69 +110,35 @@
             <li><a href="#">Contact</a></li>
             <form class="navbar-form navbar-right" role="search">
     <div class="form-group">
-      <input type="text" id= "searchInput" onKeyup="searchByName() " class="form-control" placeholder="Search for a plant name..." title="Type in a name">
+      <input type="text" class="form-control" placeholder="Search">
     </div>
-    <button id= "searchButton" type="submit" class="btn btn-default">Search</button>
+    <button type="submit" class="btn btn-default">Search</button>
   </form>
         </ul>
       </div>
     </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-      <img src="logo.png" width=100% />
-        <p>Welcome to Plantr. Plantr aims to help you start gardening at home with your kids.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Get Started &raquo;</a></p>
-      </div>
-    </div>
-
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div id="find-me-a-plant" class="col-md-5 text-center landing-button">
-          <h2>Find me a Plant</h2>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-2 text-center">
-          <h4>or</h4>
-        </div>
-        <div id="help-me-garden" class="col-md-5 text-center landing-button">
-          <h2>Help me Garden</h2>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-      </div>
-      <div class="row welcome-text">
         <div class="col-xs-12">
-           <div class="spacer-40"></div>
-           <h2>Welcome to Plantr!</h2>
-          </div> 
-          <div class="col-md-6">
-            <a href="https://ccsearch.creativecommons.org/image/detail/4tFx2VFuIxIEpvy9PEF3Pg=="><img class="img-responsive img-rounded" src="https://c6.staticflickr.com/3/2949/15294305328_bb09f6018b_o.jpg"></a>
-          </div> <!-- /.col -->
-          <div class="col-md-6">
-            
-          <h2>Welcome to Plantr!</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-          </div> <!-- /.col -->
-        </div> <!-- /.row -->
-        <div class="row welcome-text">           
-            <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-          </div> <!-- /.col -->
-        </div> <!-- /.row -->
-        <div class="row">           
-
-          <div class="col-md-6">
-          <div class="spacer-40"></div>
-          <h2>About us</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-          </div>
-          <div class="col-md-6">
-          <div class="spacer-40"></div>
-            <a href="https://ccsearch.creativecommons.org/image/detail/oWjllB1F5FyCmGRq-bY4JA=="><img class ="img-responsive img-rounded" src="https://farm2.staticflickr.com/3405/3508326102_27bc5c7c0a_o.jpg"></a>
-          </div>
+          <h2>Plant Name</h2>
         </div>
+        <div class="col-md-4">
+          <a href="http://placeholder.com"><img class="img-responsive" src="http://via.placeholder.com/800x450"></a>
+
+        </div>
+        <div class="col-md-8">
+          <p style="margin-top: 5%">Summer is the most colourful season. The wildflowers in this English meadow include poppies, cornflowers, and chamomile. Their bright colours attract bees and other insects, which spread dust-like grains, called pollen, between the flowers to help them make seeds.</p></div>
+          <div class="plant-condition-icons">
+
+          <span class="plant-condition-icons-span">  <i class="fa fa-leaf fa-2x" aria-hidden="true"></i> Low effort </span>
+          <span class="plant-condition-icons-span">  <i class="fa fa-tint fa-2x" aria-hidden="true"></i> Low water  </span>
+          <span class="plant-condition-icons-span"> <i class="fa fa-sun-o fa-2x" aria-hidden="true"></i> Needs sunlight </span>
+          <span class="plant-condition-icons-span"> <i class="fa fa-globe fa-2x" aria-hidden="true"></i> Good for wildlife </span>
+
+        </div>
+      </div>
 
       <hr>
 
@@ -154,11 +165,10 @@
               </div>
           </div>
         </div>
-
       </footer>
     </div> <!-- /container -->
 
-
+<script src="https://use.fontawesome.com/e9c18ec838.js"></script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
