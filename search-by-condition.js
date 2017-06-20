@@ -1,5 +1,6 @@
 window.onload = function() {
-  var listItems =  document.getElementsByTagName("LI");
+  ul = document.getElementById("myUL")
+  var listItems =  ul.getElementsByTagName("LI");
   var searchParams = getSearchParameters();
   filterItems(listItems, searchParams);
 };
@@ -7,10 +8,8 @@ window.onload = function() {
 
 function filterItems(items, searchParams) {
   var itemList = Array.prototype.slice.call(items);
-  console.log(itemList);
   itemList.forEach(function(thing) {
     var item = thing.childNodes[0];
-    console.log(item);
     if (!(
       item.dataset.sun == searchParams.sun &&
       item.dataset.wet == searchParams.wet &&
