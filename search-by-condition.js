@@ -6,16 +6,18 @@ window.onload = function() {
 
 
 function filterItems(items, searchParams) {
-  items.forEach (item it items) {
+  var itemList = Array.prototype.slice.call(items);
+  itemList.forEach(function(thing) {
+    var item = thing.childNodes[0];
     if (!(
-      item.dataset.sun = searchParams.sun &&
-      item.dataset.wet = searchParams.wet &&
-      item.dataset.effort = searchParams.effort &&
-      item.dataset.type = searchParams.type &&
+      item.dataset.sun == searchParams.sun &&
+      item.dataset.wet == searchParams.wet &&
+      item.dataset.effort == searchParams.effort &&
+      item.dataset.type == searchParams.type
     )) {
-      item.style.display = "none";
+      thing.style.display = "none";
     }
-  }
+  });
 }
 
 function getSearchParameters() {
