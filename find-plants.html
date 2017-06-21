@@ -181,14 +181,12 @@
     <script>
     document.getElementById("redirectToResults").addEventListener("click", function(event){
       event.preventDefault()
-      console.log("click");
       var form = document.getElementById("find-plant-form");
       var sun = document.getElementById("sun").value;
       var wet = document.getElementById("wet").value;
       var effort = document.getElementById("effort").value;
       var type = form.elements["plantTypeRadios"].value;
       var redirectString = "?sun=" + sun + "&wet=" + wet + "&effort=" + effort + "&type=" + type;
-      console.log(redirectString);
       window.location.replace("/plantr/search-condition.html" + redirectString);
     });
 
