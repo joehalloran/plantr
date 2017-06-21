@@ -27,6 +27,11 @@
     <![endif]-->
 
     <style>
+    #title-image {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
     .plant-condition-icons {
       margin-top: 5%;
       margin-left: 2%;
@@ -100,7 +105,7 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-12">
-          <img class="img-responsive center-block" src="logo.png" width="20%" >
+          <img id="title-image" class="img-responsive center-block" src="logo.png" width="33%" >
 
         </div>
 
@@ -114,19 +119,26 @@
 
       </div>
 
-      <img class="img-responsive center-block" src="about-flower.jpg" style="margin:5%"/>
+      <img class="img-responsive center-block" src="about-flower.jpg"/>
 
       <div class="row">
-        <div id="find-me-a-plant" class="col-md-5 text-center landing-button">
-          <h2>Find me a Plant</h2>
-          <p><a class="btn btn-default" href="find-plants.html" role="button">View details &raquo;</a></p>
+        <div class="col-md-4 text-center">
+          <div id="find-plant-name-button" class="landing-button">
+            <h2>Find plant by name</h2>
+            <p><a class="btn btn-default" href="search.html" role="button">View details &raquo;</a></p>
+          </div>
         </div>
-        <div class="col-md-2 text-center">
-          <h4>or</h4>
+        <div class="col-md-4 text-center">
+          <div id="find-plant-type-button" class="landing-button">
+            <h2>Find plant by type</h2>
+            <p><a class="btn btn-default" href="find-plants.html" role="button">View details &raquo;</a></p>
+          </div>
         </div>
-        <div id="help-me-garden" class="col-md-5 text-center landing-button">
-          <h2>Help me Garden</h2>
-          <p><a class="btn btn-default" href="help-me-garden.html" role="button">View details &raquo;</a></p>
+        <div class="col-md-4 text-center">
+          <div id="help-me-garden-button" class="landing-button">
+            <h2>Help me Garden</h2>
+            <p><a class="btn btn-default" href="help-me-garden.html" role="button">View details &raquo;</a></p>
+          </div>
        </div>
       </div>
 
