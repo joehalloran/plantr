@@ -6,23 +6,26 @@ body {
 }
 
 .landing-button {
-    border: solid 2px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-#find-me-a-plant {  
-    border-color: green;
-    background-color: green;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
     color: white;
     border-radius: 10px;
 }
 
-#help-me-garden {
-    border-color: brown;
-    background-color: brown;
-    color: white;
-    border-radius: 10px;
+#find-plant-name-button {
+    background-color: #1C773B;
+
+}
+
+#find-plant-type-button {
+    background-color: #6C9723;
+
+}
+
+#help-me-garden-button {
+    background-color:#304C00;
+
 }
 
 .spacer-20 {
@@ -39,4 +42,3 @@ body {
 
 	}
 }
-
