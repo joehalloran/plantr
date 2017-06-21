@@ -41,36 +41,25 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="menuLogo.png" width=100%></a>
+          <a class="navbar-brand" href="index.html"><img src="menuLogo.png" width=100%></a>
         </div>
          <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">About</a></li>
-
+          <li><a href="about.html">About</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Find Plants <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Search by name</a></li>
-              <li><a href="#">Search by environmental conditions</a></li>
-
+              <li><a href="search.html">Search by name</a></li>
+              <li><a href="find-plants.html">Search by environmental conditions</a></li>
             </ul>
           </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Advice <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Planting tutorials</a></li>
-              <li><a href="#">What to plant</a></li>
-              <li><a href="#">Things to do</a></li>
-            </ul>
-          </li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Contact</a></li>
-            <form class="navbar-form navbar-right" role="search">
-    <div class="form-group">
-      <input type="text" class="form-control" placeholder="Search">
-    </div>
-    <button type="submit" class="btn btn-default">Search</button>
-  </form>
+          <li><a href="help-me-garden.html">Advice</a></li>
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" id="searchInput" class="form-control" placeholder="Search for a plant name..." title="Type in a name">
+            </div>
+            <button id="searchButton" type="submit" class="btn btn-default">Search</button>
+          </form>
         </ul>
       </div>
     </nav>
@@ -127,6 +116,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- slider js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.0/bootstrap-slider.min.js"></script>
+    <script src="search-menu-button.js"></script>
 
   </body>
 </html>
